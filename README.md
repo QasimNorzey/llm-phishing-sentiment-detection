@@ -134,7 +134,7 @@ OLLAMA_MODEL=llama3.1:8b python -m src.llm_prompt_eval   --data data/demo_emails
 - `urgency_count`: 0.767
 - `threat_count`: 0.681
 
-هذه القائمة مفيدة داخل الشرح؛ لأنها توضح للطلاب أن النموذج لا يعتمد على “الصندوق الأسود” فقط، بل يمكن تفسيره عبر إشارات لغوية مثل الأفعال الإجرائية، الإغراء المالي، الروابط، والاستعجال.
+هذه القائمة مفيدة داخل الشرح؛ لأنها توضح أن النموذج لا يعتمد على “الصندوق الأسود” فقط، بل يمكن تفسيره عبر إشارات لغوية مثل الأفعال الإجرائية، الإغراء المالي، الروابط، والاستعجال.
 
 ## كيف تستخدمه مع بيانات حقيقية؟
 
@@ -167,26 +167,4 @@ OLLAMA_MODEL=llama3.1:8b python -m src.llm_prompt_eval   --data data/demo_emails
 - فحص compile للمصادر
 - تشغيل demo benchmark تلقائيًا بعد كل push أو pull request
 
-## رفع المشروع إلى GitHub
 
-أنا جهزت لك المشروع بصيغة **GitHub-ready repository**، لكن الرفع إلى حساب GitHub نفسه يحتاج صلاحية حسابك. بعد فك الضغط، نفّذ:
-
-```bash
-git init
-git add .
-git commit -m "Initial phishing detection teaching project"
-git branch -M main
-git remote add origin https://github.com/<YOUR_USERNAME>/llm-phishing-sentiment-detection.git
-git push -u origin main
-```
-
-## مراجع مختصرة
-
-1. Samer Atawneh, Hamzah Aljehani. *Phishing Email Detection Model Using Deep Learning*. Electronics, 2023. DOI: 10.3390/electronics12204261.
-2. Kutub Thakur et al. *A Systematic Review on Deep-Learning-Based Phishing Email Detection*. Electronics, 2023. DOI: 10.3390/electronics12214545.
-3. Phyo Htet Kyaw, Jairo Gutierrez, Akbar Ghobakhlou. *A Systematic Review of Deep Learning Techniques for Phishing Email Detection*. Electronics, 2024. DOI: 10.3390/electronics13193823.
-4. René Meléndez, Michal Ptaszynski, Fumito Masui. *Comparative Investigation of Traditional Machine-Learning Models and Transformer Models for Phishing Email Detection*. Electronics, 2024. DOI: 10.3390/electronics13244877.
-5. Mariam Ibrahim, Ruba Elhafiz. *Phishing Email Detection Using BERT and RoBERTa*. Computation, 2026. DOI: 10.3390/computation14020046.
-6. Peter Tooher, Harjinder Singh Lallie. *A Two-Stage Deep Learning Framework for AI-Driven Phishing Email Detection Based on Persuasion Principles*. Computers, 2025. DOI: 10.3390/computers14120523.
-7. *Uncovering phishing attacks using principles of persuasion analysis*. Journal of Network and Computer Applications, 2024. DOI: 10.1016/j.jnca.2024.103964.
-8. Hugging Face Transformers documentation: *Text classification*. Useful for the transformer training pipeline.
