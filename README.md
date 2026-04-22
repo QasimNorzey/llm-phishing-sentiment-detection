@@ -144,16 +144,6 @@ OLLAMA_MODEL=llama3.1:8b python -m src.llm_prompt_eval   --data data/demo_emails
 4. قارن `accuracy`, `precision`, `recall`, `f1`.
 5. اعرض أوزان الخصائص، وأهم العبارات النصية، وتحليل الأخطاء.
 
-## اقتراح أكاديمي لنسخة الماجستير
-
-لتحويل المستودع إلى مشروع ماجستير أقوى، نفّذ ما يلي:
-
-- استخدم corpora حقيقية مثل CEAS-08 وEnron وSpamAssassin/Nazario.
-- أضف **ablation study**: نص فقط، خصائص فقط، نص + خصائص.
-- اختبر أكثر من نموذج: Logistic Regression, SVM, DistilBERT, RoBERTa.
-- افصل بين التدريب والاختبار زمنيًا أو بحسب المصدر لتجنب التسرب.
-- نفّذ **error analysis** للحالات الملتبسة مثل رسائل الدعم الشرعية ذات النبرة العاجلة.
-
 ## GitHub Actions
 
 تمت إضافة workflow بسيط داخل:
